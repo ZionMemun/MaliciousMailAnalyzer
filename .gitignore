@@ -16,7 +16,7 @@ Thumbs.db
 .env
 
 # Sample emails
-samples/*.eml
+samples/sample_email.eml
 
 # CSV files
-exploratory_data_analysis/suspicious_words/*
+exploratory_data_analysis/suspicious_words/top_suspicious_words_by_total_words.csv
