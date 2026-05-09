@@ -6,6 +6,77 @@ The project combines a Google Workspace Gmail Add-on with a Python FastAPI backe
 
 ---
 
+# Demo Examples
+
+The project includes several realistic phishing email samples under the `samples/` directory.
+These examples demonstrate how different phishing indicators affect the final maliciousness verdict.
+
+---
+
+## Risky Attachment Detection
+
+This example demonstrates detection of a dangerous attachment such as an executable file.
+
+Detected signals include:
+
+- Suspicious words
+- Generic greeting
+- Risky attachment detection
+
+Example result:
+
+![Risky Attachment Example](samples/attachment_example.png)
+
+---
+
+## Suspicious URL / Hard Signal Detection
+
+This example demonstrates a phishing email containing a suspicious hidden URL behind a legitimate-looking text such as:
+
+```text
+Verify Account
+```
+
+Detected signals include:
+
+- Suspicious words
+- Generic greeting
+- Suspicious URL pattern
+- Hard signal escalation
+
+Example result:
+
+![Suspicious URL Example](samples/hard_signal_example.png)
+
+---
+
+## Gmail Add-on User Context
+
+The Gmail Add-on also supports lightweight user context configuration.
+
+The user name and email are used only for:
+
+- Personalization detection
+- Recipient validation
+
+Example:
+
+![User Context Example](samples/user_context.png)
+
+---
+
+These examples help demonstrate the difference between:
+
+- Regular weighted scoring signals
+- Hard security signals
+
+For example:
+
+- Generic greetings increase the numeric maliciousness score.
+- Dangerous URLs or risky attachments can force stronger verdict escalation.
+
+---
+
 # Overview
 
 The goal of this project is to help users quickly understand whether an opened email looks safe, suspicious, or malicious.
@@ -126,7 +197,10 @@ MaliciousMailAnalyzer/
 │       └── top_suspicious_words_by_total_words.csv
 │
 ├── samples/
-│   └── sample_email.eml
+│   ├── sample_email.eml
+│   ├── attachment_example.png
+│   ├── hard_signal_example.png
+│   └── user_context.png
 │
 ├── .gitignore
 └── README.md
