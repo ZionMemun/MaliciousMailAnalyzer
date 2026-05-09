@@ -75,13 +75,21 @@ def calculate_regular_score(
     feature_results: list[FeatureResult]
 ) -> int:
     """
-    Calculates the combined weighted score of all regular features.
+    Calculates the combined weighted score of all regular features
+    and normalizes it to the range 0-100.
     """
 
-    return sum(
+    raw_score = sum(
         feature.score
         for feature in feature_results
     )
+
+    normalized_score = max(
+        0,
+        min(raw_score, 100)
+    )
+
+    return normalized_score
 
 
 def determine_score_based_verdict(
