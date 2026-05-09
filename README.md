@@ -161,7 +161,6 @@ MaliciousMailAnalyzer/
 │   │   ├── body_extractor.py
 │   │   ├── url_extractor.py
 │   │   ├── attachment_extractor.py
-│   │   ├── email_printer.py
 │   │   └── check_email_parser.py
 │   │
 │   ├── features/
@@ -183,27 +182,30 @@ MaliciousMailAnalyzer/
 │   │   ├── schemas.py
 │   │   └── email_scorer.py
 │   │
-│   └── requirements.txt
 │
-├── gmail_addon/
-│   ├── Code.gs
+├── google_apps_script/
+│   ├── gmail.addon.gs
 │   └── appsscript.json
 │
 ├── exploratory_data_analysis/
 │   ├── phishing_email_eda.ipynb
 │   └── suspicious_words/
-│       ├── top_malicious_words.csv
 │       ├── top_suspicious_words_by_email_count.csv
-│       └── top_suspicious_words_by_total_words.csv
 │
 ├── samples/
-│   ├── sample_email.eml
+│   ├── reply_to_mismatch_example_email.eml
+│   ├── url_example_email.eml
+│   ├── attachment_example_email.eml
+│   └── dear_friend_example_email.eml
+│
+├── samples/
 │   ├── attachment_example.png
 │   ├── hard_signal_example.png
 │   └── user_context.png
 │
 ├── .gitignore
-└── README.md
+├── README.md
+└── requirements.txt
 ```
 
 ---
