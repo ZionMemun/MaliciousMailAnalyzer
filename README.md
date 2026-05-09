@@ -8,8 +8,8 @@ The project combines a Google Workspace Gmail Add-on with a Python FastAPI backe
 
 # Demo Examples
 
-The project includes several realistic phishing email samples under the `samples/` directory.
-These examples demonstrate how different phishing indicators affect the final maliciousness verdict.
+The project includes several realistic malicious email samples under the `samples/` directory.
+These examples demonstrate how different malicious indicators affect the final maliciousness verdict.
 
 ---
 
@@ -31,7 +31,7 @@ Example result:
 
 ## Suspicious URL / Hard Signal Detection
 
-This example demonstrates a phishing email containing a suspicious hidden URL behind a legitimate-looking text such as:
+This example demonstrates a malicious email containing a suspicious hidden URL behind a legitimate-looking text such as:
 
 ```text
 Verify Account
@@ -188,7 +188,7 @@ MaliciousMailAnalyzer/
 │   └── appsscript.json
 │
 ├── exploratory_data_analysis/
-│   ├── phishing_email_eda.ipynb
+│   ├── malicious_email_eda.ipynb
 │   └── suspicious_words/
 │       ├── top_suspicious_words_by_email_count.csv
 │
