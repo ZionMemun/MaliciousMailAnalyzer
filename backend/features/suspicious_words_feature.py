@@ -93,6 +93,7 @@ SUSPICIOUS_WORD_GROUPS = {
         "open",
         "download",
         "submit",
+        "urgent"
     ],
 }
 
