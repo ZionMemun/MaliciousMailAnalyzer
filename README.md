@@ -753,7 +753,7 @@ This makes it easy to test:
 ## 1. Clone the repository
 
 ```powershell
-git clone <repository-url>
+git clone https://github.com/ZionMemun/MaliciousMailAnalyzer
 ```
 
 ---
