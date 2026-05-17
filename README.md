@@ -177,12 +177,11 @@ MaliciousMailAnalyzer/
 │   │   ├── email_authentication_feature.py
 │   │   └── check_features.py
 │   │
-│   ├── scoring/
-│   │   ├── __init__.py
-│   │   ├── schemas.py
-│   │   └── email_scorer.py
-│   │
-│   └── requirements.txt
+│   └── scoring/
+│       ├── __init__.py
+│       ├── schemas.py
+│       └── email_scorer.py
+│   
 │
 ├── google_apps_script/
 │   ├── gmail_addon.gs
@@ -202,6 +201,11 @@ MaliciousMailAnalyzer/
 │   ├── hard_signal_example.png
 │   └── user_context.png
 │
+├── images/
+│   ├── attachment_example.png
+│   ├── hard_signal_example.png
+│   └── user_context.png
+│ 
 ├── .gitignore
 ├── README.md
 └── requirements.txt
